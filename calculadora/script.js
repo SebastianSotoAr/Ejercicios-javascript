@@ -23,6 +23,10 @@ igualBtn.addEventListener('click', () => {
         numero = eval(text);
         text = numero.toString();
         showResult(text);
+        if (text == '0') {
+            text = ''
+        }
+        
     } catch (error) {
         numero = 0;
         text = '';
